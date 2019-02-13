@@ -61,9 +61,9 @@ public class ObservableCreateExample {
 	
 	public static void main(String[] args){ 
 		ObservableCreateExample demo = new ObservableCreateExample();
-		demo.basic();
-		demo.notSubscribed();
+		// demo.basic();
+		// demo.notSubscribed();
 		demo.subscribeLambda();
-		demo.subscribeAnonymously();
+		// demo.subscribeAnonymously();
 	}
 }

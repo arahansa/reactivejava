@@ -4,8 +4,9 @@ import io.reactivex.Observable;
 
 public class FirstExample {	
 	public void emit() {
-		Observable.just("Hello", "RxJava2!!")
-		.subscribe(System.out::println);
+		Observable<String> hello = Observable.just("Hello", "RxJava2!!");
+		hello.subscribe(System.out::println);
+		hello.subscribe(System.out::print);
 	}
 
 	public static void main(String args[]) { 
