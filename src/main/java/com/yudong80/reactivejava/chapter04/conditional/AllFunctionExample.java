@@ -22,7 +22,7 @@ public class AllFunctionExample implements MarbleDiagram{
 			.map(Shape::getShape)
 			.all(Shape.BALL::equals);
 			//.all(val -> Shape.BALL.equals(Shape.getShape(val)));
-		source.subscribe(Log::i);
+		// source.subscribe(Log::i);
 	}
 	
 	public void wrongCase() { 
@@ -36,7 +36,7 @@ public class AllFunctionExample implements MarbleDiagram{
 			.doOnSuccess(v -> Log.d("onSuccess : val = " + v));
 		
 			//.all(val -> Shape.BALL.equals(Shape.getShape(val)));
-		source.subscribe(Log::i);		
+		// source.subscribe(Log::i);
 	}
 	
 	public static void main(String[] args) { 
